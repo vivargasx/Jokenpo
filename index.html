@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jokenpo - Jogue Pedra, Papel e Tesoura contra o computador">
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <link rel="stylesheet" href="./src/css/darkmode.css">
+    <link rel="shortcut icon" href="./img/icone-pedra-papel-tesoura.png" type="image/x-icon">
+    <title>Jokenpo</title>
+</head>
+
+<body>
+    <main class="card_main" role="main">
+        <img class="logo_game" src="img/icone-pedra-papel-tesoura.png" alt="Ícone Pedra Papel Tesoura">
+
+        <div class="titles">
+            <h1>Jokenpo</h1>
+            <h2><strong>Insira seu nome para jogar</strong></h2>
+        </div>
+
+        <div class="player" role="group" aria-labelledby="player-label">
+            <label id="player-label" for="input-playerName">Nome do jogador:</label>
+            <input
+                type="text"
+                class="playerName"
+                id="input-playerName"
+                maxlength="15"
+                placeholder="Ex: Jogador"
+                autocomplete="off"
+                aria-describedby="name-hint"
+            >
+            <small id="name-hint" class="name-hint">Apenas letras, entre 3 e 15 caracteres</small>
+        </div>
+
+        <div class="btn_btn">
+            <button class="btn_play" id="btn-play" aria-label="Iniciar jogo">
+                <span class="button-decor" aria-hidden="true"></span>
+                <div class="button-content">
+                    <div class="button__icon" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            viewBox="0 0 16 16" aria-hidden="true">
+                            <path
+                                d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393" />
+                        </svg>
+                    </div>
+                    <span class="button__text">Jogar</span>
+                </div>
+            </button>
+
+            <div class="btn_config" role="group" aria-label="Alternar tema">
+                <label class="ui-switch" title="Alternar modo escuro">
+                    <input type="checkbox" class="checkbox" id="toggle_chkBox" aria-label="Modo escuro">
+                    <div class="slider">
+                        <div class="circle"></div>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </main>
+
+    <script src="./src/js/Animations/animations.js"></script>
+    <script src="./src/js/index-home.js"></script>
+</body>
+
+</html>

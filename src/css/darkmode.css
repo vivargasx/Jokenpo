@@ -1,0 +1,137 @@
+
+/* --- Variaveis do modo escuro ------------------------------- */
+body.dark {
+    --bg-page:       #1a1a2e;
+    --bg-card:       #16213e;
+    --bg-input:      #0f3460;
+    --text-primary:  #e0e0e0;
+    --text-secondary:#9e9e9e;
+    --border-subtle: rgba(255, 255, 255, 0.1);
+    --clr-win:       #4caf50;
+    --clr-lose:      #ef5350;
+    --clr-draw:      #ffc107;
+    --clr-error:     #ef5350;
+    --shadow-card:   0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+/* --- Corpo -------------------------------------------------- */
+body.dark {
+    background-color: var(--bg-page);
+    color: var(--text-primary);
+}
+
+/* --- Card principal ----------------------------------------- */
+body.dark .card_main,
+body.dark .card-jokenpo {
+    background-color: var(--bg-card);
+    box-shadow: var(--shadow-card);
+}
+
+/* --- Titulos ----------------------------------------------- */
+body.dark h1 {
+    color: var(--text-primary);
+}
+
+body.dark h2 {
+    color: var(--clr-accent);
+}
+
+/* --- Input de nome ------------------------------------------ */
+body.dark .playerName {
+    background-color: var(--bg-input);
+    color: var(--text-primary);
+    border-color: var(--border-subtle);
+}
+
+body.dark .playerName::placeholder {
+    color: var(--text-secondary);
+}
+
+body.dark .playerName:focus {
+    border-color: var(--clr-accent);
+    box-shadow: 0 0 0 3px rgba(26, 162, 216, 0.3);
+}
+
+/* --- Botao Play --------------------------------------------- */
+body.dark .btn_play {
+    background-color: #1e1e3a;
+    color: var(--text-primary);
+    border-color: var(--border-subtle);
+}
+
+body.dark .btn_play:hover .button__text {
+    color: #fff;
+}
+
+/* --- Botoes de jogo ----------------------------------------- */
+body.dark .btn-game {
+    background-color: var(--bg-input);
+    border-color: var(--border-subtle);
+}
+
+body.dark .btn-game-label {
+    color: var(--text-secondary);
+}
+
+body.dark .btn-game:hover {
+    border-color: var(--clr-accent);
+}
+
+/* --- Botao voltar e reset ----------------------------------- */
+body.dark .btn-back {
+    color: var(--text-secondary);
+    border-color: var(--border-subtle);
+}
+
+body.dark .btn-back:hover {
+    color: var(--clr-accent);
+    border-color: var(--clr-accent);
+}
+
+/* --- Mensagem de erro --------------------------------------- */
+body.dark .error-msg {
+    color: var(--clr-error);
+}
+
+/* --- Hint de nome ------------------------------------------ */
+body.dark .name-hint {
+    color: var(--text-secondary);
+}
+
+/* --- Label de tema ----------------------------------------- */
+body.dark .theme-label {
+    color: var(--text-secondary);
+}
+
+/* --- Saudacao do jogador ------------------------------------ */
+body.dark .player-greeting {
+    color: var(--text-secondary);
+}
+
+/* --- Escolha placeholder ------------------------------------ */
+body.dark .choice-placeholder {
+    color: var(--text-secondary);
+}
+
+/* --- Prompt de escolha ------------------------------------- */
+body.dark .choose-prompt {
+    color: var(--text-secondary);
+}
+
+/* --- Imagens de escolha (Pedra, Papel, Tesoura) --------------- */
+body.dark .btn-game img,
+body.dark .choice-img-wrapper img {
+    filter: invert(1) brightness(1.1);
+}
+
+body.dark .choice-img-wrapper {
+    background-color: rgba(26, 162, 216, 0.15);
+    border-color: rgba(26, 162, 216, 0.4);
+}
+
+body.dark .vs-badge {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
+    flex-shrink: 0;
+}
