@@ -4,6 +4,11 @@ Um projeto de Pedra, Papel e Tesoura!
 JOGUE:
 https://vivargasx.github.io/Jokenpo/
 
+<p align="center">
+  <img src="./screenshots/gameplay.png" width="45%" />
+  <img src="./screenshots/gameplay-darkmode.png" width="45%" />
+</p>
+
 🚀 Sobre o Projeto
 Este desafio técnico foi desenvolvido para consolidar conceitos de JavaScript, transformando uma mecânica simples em uma aplicação robusta com separação de responsabilidades e estados de animação.
 
